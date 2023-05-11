@@ -28,16 +28,7 @@ timeline.from(".bg-img", {
     top: `${+document.querySelector(".bg-img").offsetHeight / 2}px`,
     duration: 3.5,
 })
-timeline.from(
-    ".mountain-10",
-    {
-        y:
-            window.innerHeight -
-            document.querySelector(".mountain-10").getBoundingClientRect().top + 1000,
-        duration: 3,
-    },
-    "1"
-);
+
 
 
 
