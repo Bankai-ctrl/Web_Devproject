@@ -49,4 +49,8 @@ timeline.from(".text h1",
         duration: 1.5,
     },
     "3"
-);
+)
+    .from(".hide", {
+        opacity: 0,
+        duration: 1.5
+    }, "3")
