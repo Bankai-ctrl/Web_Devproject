@@ -1,0 +1,536 @@
+	*{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+		font-family: "Montserrat",sans-serif;
+		/*background-color: whitesmoke;*/
+	}
+
+
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+
+		/***NavBar*/
+	.hamburger a{
+		padding: 0;
+		width: 37px;
+		height: 37px;
+		border-radius: 50%;
+		display: flex;
+		background-color: rgba(115,115,115,0.7);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		justify-content: center;
+		align-items: center;
+	}
+	.hamburger .bar{
+		position: relative;
+		width: 52%;
+		height: 1.3px;
+		background-color: white;
+		border-radius: 2px;
+	}
+	.hamburger .bar::before, .hamburger .bar::after{
+		content: '';
+		position: absolute;
+		width: 60%;
+		left: 50%;
+		height: 100%;
+		background-color: inherit;
+		border-radius: 2px;
+		transform: translateX(-50%);
+	}
+	.hamburger .bar::before{
+		top: -4.5px;
+	}
+	.hamburger .bar::after{
+		top: 4.5px;
+	}
+
+	li .fa{
+		position: relative;
+		right: -370px;
+		top: 5px;
+		font-size: 27px;
+		padding: 5px;
+		color: purple;
+		border:3px solid dodgerblue;
+		border-radius: 50%
+	}
+
+	.fa:hover{color: purple;transition: 0.2s ease-out;}
+
+	.collapse{
+		transition: 1s ease-in-out;
+		height: 57px;
+		color: black !important;
+	}
+	
+	.nav-link{
+		color: white;
+		font-size: 20px;
+		height: 57px;
+		margin-left: 30px;
+	}
+
+	.nav-link:hover{
+		color: black;
+		background-color: gray;
+		transition: background-color 0.4s ease-in-out;
+	}
+	
+	.navbar{padding: 0px;}
+
+	.bgColor{
+		height: 57px;
+		background-color: green;
+		color: black !important;
+	}
+	
+	.bgColort{color: black;}
+
+	.logodiv{
+		position: absolute;
+		top: -45px;
+		left: 0px;
+		font-weight: bold;
+		/*border: 1px solid gold;*/
+	}
+	.logoimg{
+		position: relative;
+		top: 45px;
+		left: 10px;
+	}
+
+	.logotext{
+		margin:0px;
+		padding:0px;
+		font-size: 1.8rem;
+		text-decoration: none;
+		padding-left: 70px;
+		margin-top: 5px;
+		text-shadow: 2px 2px 5px purple;
+	}
+	a:hover{text-decoration: none;color: white;}
+
+	.mobilenav1{display: none;}
+
+	.mobilenavicon{
+			text-decoration: none;
+			list-style: none;
+			padding: 15px;
+			font-family: sans-serif;
+			border-top: 1px solid white;
+			border-bottom: 1px solid white;
+		}
+
+	
+
+		/***Background Images***/
+	.box1{
+		height: 600px;
+		position: relative;
+		background-image: url(../images/image1.jpg);
+		background-size: 100% 100%;
+	}
+
+	.box2{
+		height: 600px;
+		background-image: url(../images/image3.jpg);
+		background-size: 100% 100%;
+	}
+
+	.box3{
+		height: 600px;
+		background-image: url(../images/image2.jpg);
+		background-size: 100% 100%;
+	}
+
+	.bgtext{
+		font-size:4rem;
+		color:whitesmoke;
+		position: absolute;
+		left: 0px;
+		top: 40%;
+		width: 100%;
+		text-align: center;
+		text-shadow: 5px 5px 10px purple;
+	}
+	
+
+
+	/*====Animation Effect====*/
+
+	.text_to_animate {
+		  margin: 0;
+		  padding: 0;
+		  font-weight: bold;
+		  font-size: 4em;
+		  line-height: 1.5em;
+		  letter-spacing: 4px;
+		  text-align: center;
+		  color: #9fc95f;
+		  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	}
+
+	.text_to_animate span {
+		  display: inline-block;
+		  z-index: 100;
+		  position: relative;
+		  top: 0;
+		  opacity: 1;
+		  letter-spacing: 4px;
+		  transform: rotateY(0deg);
+		  transition: top 1s cubic-bezier(0.64, -0.16, 0.15, 1.64), opacity 1s linear, letter-spacing 0.6s linear, transform 1s ease;
+		}
+	.text_to_animate span.letters_in_top {
+	  	top: -100vh;
+	  	opacity: 0;
+	}
+	.text_to_animate span.rotate_letters {
+	  	transform: rotateY(1080deg);
+	  	transition: transform 2s ease-in-out, letter-spacing 1s linear;
+	}
+	.text_to_animate span.space_letters {
+	  	letter-spacing: 12px;
+	  	transition: letter-spacing 1s linear, transform 2s ease-in-out;
+	}
+	.text_to_animate span.color_letters {
+	    color: #bdd656;
+	    text-shadow: 0 0 30px #cbe852;
+	}
+	.callback_anim {
+	  	transform: rotateZ(-10deg) scale(1.2);
+	  	transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	}	
+
+
+
+
+	/*** Best selling Section ***/
+	.bsellingcon{
+		/*border: 1px solid blue;*/
+		text-align: center;
+		background-color: lightgray;
+		margin-bottom: 50px;
+		height: 300px;
+	}
+
+
+	.bselling1{
+		height: 100%;
+		border-radius: 5px;
+		box-shadow: 3px 3px 5px purple;
+		background-image: url(../images/Aftershock2.jpg);
+		background-size: 100% 100%;
+	}
+
+	.bselling2{
+		height: 100%;
+		border-radius: 5px;
+		box-shadow: 3px 3px 5px purple;
+		background-image: url(../images/Aftershock1.jpg);
+		background-size: 100% 100%;
+	}
+	.bselling3{
+		height: 100%;
+		border-radius: 5px;
+		box-shadow: 3px 3px 5px purple;
+		background-image: url(../images/Aftershock5.jpg);
+		background-size: 100% 100%;
+	}
+	
+	.bsellingdiv{
+		margin-left: 10px;
+		height: 200px;
+		margin-bottom: 20px;
+	}
+
+	.bsellingdiv:hover {
+		transition: 0.2s ease-out !important;
+		opacity: 0.7 !important;
+	}
+	.bsellingdiv:hover .shop{
+		visibility: visible;
+	}
+	.shop{
+		background-color: #e6e6e6;
+		color: green;
+		position: relative;
+		top: 45%;
+		left: 25%;
+		border: none;
+		padding: 4px;
+		border-radius: 5px;
+		visibility: hidden;
+	}
+	.shop:hover{
+		background-color: black;
+	}
+
+
+	/**Products & Services**/
+
+	.videotxt{
+		height: 10%;
+		border-radius: 15px;
+		text-align: center;
+		font-weight: bold;
+		text-shadow: 2px 2px 10px green;
+	}
+
+	.condiv1{
+		height: 300px;
+		margin-bottom: 10px;
+		/*border: 1px solid red;*/
+		padding: 5px;
+	}
+	
+	.condiv2{
+		/*border: 1px solid red;*/
+		padding: 5px;
+		height: 300px;
+	}
+
+	.condiv3{
+		height: 250px;
+		/*border: 1px solid red;*/
+		margin-bottom: 25px;
+		padding: 0px 5px 0px 5px;
+		overflow: hidden;
+	}
+	.condiv4{
+		height: 250px;
+		/*border: 1px solid red;*/
+		margin-bottom: 25px;
+		padding: 0px 5px 0px 5px;
+		overflow: hidden;
+	}
+	.condiv5{
+		height: 250px;
+		/*border: 1px solid red;*/
+		margin-bottom: 25px;
+		padding: 0px 5px 0px 5px;
+		overflow: hidden;
+	}
+	.condiv6{
+		height: 250px;
+		margin-bottom: 25px;
+		/*border: 1px solid red;*/
+		padding: 0px 5px 0px 0px;
+		overflow: hidden;
+	}
+	.condiv7{
+		margin-bottom: 25px;
+		height: 250px;
+		/*border: 1px solid red;*/
+		padding: 0px 5px 0px 5px;
+		overflow: hidden;
+	}
+	.condiv8{
+		margin-bottom: 25px;
+		height: 250px;
+		/*border: 1px solid red;*/
+		padding: 0px 0px 0px 5px;
+		overflow: hidden;
+	}
+	.picdiv1{
+		height: 100%;
+		/*border: 2px solid green;*/
+		padding-top: 10px;
+		border-radius: 25px;
+		overflow: hidden;
+		box-shadow: 2px 2px 5px purple;
+	}
+	.picdiv2{
+		height: 100%;
+		/*border: 1px solid black;*/
+		overflow: hidden;
+		padding-top: 10px;
+		border-radius: 25px;
+		box-shadow: 2px 2px 5px purple;
+	}
+	.picdiv3{
+		height: 100%;
+		padding: 0px;
+		/*border: 1px solid black;*/
+		background-size: 100% 100%;
+		border-radius: 10px;
+		box-shadow: 2px 2px 5px black;
+		background-image: url(../images/aftershock5.jpg);
+	}
+	.picdiv4{
+		height: 100%;
+		padding: 0px;
+		border-radius: 10px;
+		/*border: 1px solid black;*/
+		background-size: 100% 100%;
+		box-shadow: 2px 2px 5px black;
+		background-image: url(../images/shockfresh.jpg);
+	}
+	.picdiv5{
+		height: 100%;
+		padding: 0px;
+		/*border: 1px solid black;*/
+		background-size: 100% 100%;
+		border-radius: 10px;
+		box-shadow: 2px 2px 5px black;
+		background-image: url(../images/aftershock2.jpg);
+	}
+
+	.picdiv6{
+		height: 100%;
+		padding: 0px;
+		/*border: 1px solid black;*/
+		background-size: 100% 100%;
+		border-radius:10px;
+		box-shadow: 2px 2px 5px black;
+		background-image: url(../images/aftershock3.jpg);
+	}
+	.picdiv7{
+		height: 100%;
+		padding: 0px;
+		/*border: 1px solid black;*/
+		background-size: 100% 100%;
+		border-radius: 10px;
+		box-shadow: 2px 2px 5px black;
+		background-image: url(../images/aftershock4.jpg);
+	}
+	.picdiv8{
+		height: 100%;
+		padding: 0px;
+		/*border: 1px solid black;*/
+		background-size: 100% 100%;
+		border-radius: 10px;
+		box-shadow: 2px 2px 10px black;
+		background-image: url(../images/1941.jpg);
+	}
+
+	.btnhov{
+		background-color:darkgreen;
+		/*border: 1px solid white;*/
+		padding: 7px;
+		border-radius: 7px;
+		color: white;
+		position: relative;
+		top: 10px;
+	}
+	.btndiv{
+		/*border: 1px solid purple;*/
+		width: 98.6%;
+		height: 40px;
+		position: absolute;
+		bottom: 0px;
+		opacity: 0.8;
+		border-radius: 10px;
+		background-color: black;
+
+	}
+	.btndiv2{
+		/*border: 1px solid purple;*/
+		width: 97%;
+		border-radius: 10px;
+		height: 40px;
+		position: absolute;
+		bottom: 0px;
+		opacity: 0.8;
+		background-color: black;
+
+	}
+	.btndiv:hover{
+		height: 100px;
+		transition: 0.8s ease-out;
+	}
+	.btndiv2:hover{
+		height: 100px;
+		transition: 0.8s ease-out;
+	}
+	.btnhov:hover{
+		border: 1px solid white;
+		color: white;
+		background-color: black;
+		opacity: 0.7;
+		height: 40px;
+		transition: 0.5s ease-in-out;
+	}
+	.amt{
+		font-size: 17px;
+		color: white;
+		position: relative;
+		top: 20px;
+		visibility: hidden;
+	}
+	.btndiv:hover .amt{
+		visibility: visible;
+	}
+	.btndiv2:hover .amt{
+		visibility: visible;
+	}
+	.more{
+		background-color: lightgray;
+		padding: 10px;
+		border: none;
+		color: black;
+		border-radius: 5px;
+	}
+	.more:hover{background-color: green;color:;}
+
+		/***FOOTER**/
+	.footer{
+		margin: 0px;
+		opacity: 0.9;
+		background-color: darkgreen;
+	}
+	.container{
+		margin-bottom: 165px;
+	}
+	.ficon{
+		margin: 0px 15px 0px 0px;
+		padding: 0px;
+		color: white;
+		font-size: 22px;
+	}
+		
+
+	@media only screen and (max-width: 1200px){
+		li .fa{position: relative;right: -40px;}
+	}
+
+	@media only screen and (max-width: 950px){		
+		.logotext{
+			visibility: hidden;
+		}
+		li .fa{position: relative;right: -80px;}
+	}
+	@media only screen and (max-width: 670px){
+		li .fa{visibility: hidden;}
+	}
+
+	@media only screen and (max-width: 580px){
+		.mobilenav1{
+			display: block;
+			position: fixed;
+			padding: 0px;
+			background-color: #006622;
+			z-index: 1000;
+	}   
+
+		.mobilenav{
+			display: none;
+			height: 300px;
+			background-color: lightgray;
+		}
+
+		li .fa{position: relative;right: -200px;}
+	}
