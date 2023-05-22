@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+
+*, 
+*::before, 
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Poppins", sans-serif;
+
+}
+.contain{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/justice/images/About\ Us.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+header{
+	position: absolute;
+	width: 100%;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	
+}
+header nav{
+	
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} 
+.logo{
+	font-family: "Poppins", "sans-serif";
+	transform: scale(200%);
+	padding-top: 35px;
+	color: white;
+	width: 100px;
+	height:100px;
+    text-decoration: none;
+}
+section.hero {
+    
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .hero-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    position: absolute;
+    width: auto;
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    text-align: center;
+  }
+  
+  section.about {
+   
+    padding: 40px;
+  }
+  
+  .about-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    position: absolute;
+    width: auto;
+    left: 120px;
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    text-align: center;
+  }
+  
+.boot {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    bottom: 0px;
+}
+  
+.boot p {
+    margin: 0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  

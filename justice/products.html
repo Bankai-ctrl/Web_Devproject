@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/justice/products.css" class="stylesheet">
+    <title>AfterShock</title>
+</head>
+<body>
+    
+    <div class="container">
+    <header class = "hide">
+		<nav>
+			<a class="logo" href="/justice/index.html">AfterShock</a> 
+			<ul>
+				<li>
+					<div class="btn"><a href="#">About</a>
+				</li>
+				
+				<li>
+					<div class="btn"><a href="#">Contact</a>
+				</li>
+				
+				<li>
+					<div class="btn"><a href="products.html">Products</a>
+				</li>
+				
+				
+			</ul>
+		</nav>
+	</header>
+    <div class="msg_container">
+        <div id="slider">
+            <div class ="msg-col">
+                <h1>AfterShock Classic</h1>
+                <p> The ultimate natural energy drink, crafted with carefully sourced natural ingredients. Boost your vitality and focus with our unique blend of botanicals, 
+                    vitamins, and adaptogens. 
+                    Free from artificial additives and excessive sugar, Aftershock Natural delivers pure, sustained energy for a healthier and invigorating experience.</p>
+            </div>
+            <div class ="msg-col">
+
+                <h1>AfterShock Cherry</h1>
+                <p> The natural energy drink infused with the bold essence of cherries. Experience a burst of invigorating 
+                    energy with our carefully crafted blend of natural ingredients. 
+                    With no artificial additives and a delicious cherry flavor, Aftershock Cherry is the perfect choice for a refreshing and revitalizing energy boost.</p>
+            </div>
+            <div class ="msg-col">
+
+                <h1>AfterShock Clover</h1>
+                <p>  Unlock your energy potential with the natural power of clover and a touch of luck. This energizing drink combines the goodness of natural ingredients with the enchanting essence of clover, invigorating your senses and infusing your day with a fortunate twist. 
+                    Embrace the luck and vitality of Aftershock Clover.</p>
+            </div>
+            <div class ="msg-col">
+
+                <h1>AfterShock Caffeine</h1>
+                <p> The natural energy drink that gives you a java-lutionary boost.
+                     With a perfect blend of natural ingredients and a caffeine kick, this drink will perk you up and keep you buzzing. Get ready to espresso yourself with Aftershock Caffeine and awaken your inner coffee connoisseur.</p>
+            </div>
+        </div>
+    </div>
+    <div class="controller">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+        <div id="line4"></div>
+        <div id="active"></div>
+    </div>
+</div>
+<script>
+    var slider = document.getElementById('slider');
+    
+    var active = document.getElementById('active');
+    var line1 = document.getElementById('line1');
+    var line2 = document.getElementById('line2');
+    var line3 = document.getElementById('line3');
+    var line4 = document.getElementById('line4');
+    
+    line1.onclick = function(){
+        slider.style.transform='translateX(0)';
+        
+        active.style.top = '0px';
+    }
+    line2.onclick = function(){
+        slider.style.transform='translateX(-25%)';
+        active.style.top = '80px';
+    }
+    line3.onclick = function(){
+        slider.style.transform='translateX(-50%)';
+        active.style.top = '160px';
+    }
+    line4.onclick = function(){
+        slider.style.transform='translateX(-75%)';
+        active.style.top = '240px';
+    }
+</script>
+</body>
+</html>
