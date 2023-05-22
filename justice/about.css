@@ -50,6 +50,18 @@ header nav{
 	height:100px;
     text-decoration: none;
 }
+@media only screen and (max-width: 1400px){
+  a{position: relative; left: 40px;}
+}
+@media only screen and(max-width: 1200px){
+  .hero .hero-content{position: relative; left:40px;}
+}
+@media only screen and(max-width: 1400px){
+  .boot{position: absolute; bottom:0px;}
+}
+@media only screen and(max-width: 1200px){
+  .about .about-content{position: relative; left:40px;}
+}
 section.hero {
     
     background-size: cover;
@@ -88,14 +100,15 @@ section.hero {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 20px;
     position: absolute;
-    width: auto;
-    left: 120px;
+    width: 100%;
+    left: 0px;
     text-align: center;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
     text-align: center;
+    color: white;
   }
   
 .boot {
@@ -112,6 +125,7 @@ section.hero {
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
     bottom: 0px;
+    color: white;
 }
   
 .boot p {
